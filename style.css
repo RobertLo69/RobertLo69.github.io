@@ -1,0 +1,502 @@
+/* =========== 基本樣式與字體設定 Reset & Typography =========== */
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #0056b3;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+}
+
+h1 { font-size: 3rem; }
+h2 { font-size: 2rem; color: #003366; }
+h3 { font-size: 1.25rem; }
+
+section {
+    padding: 60px 0;
+}
+
+/* =========== 頁首與導覽列 Header & Navigation =========== */
+.main-header {
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #003366;
+}
+.logo:hover { text-decoration: none; }
+
+.main-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.main-nav li {
+    margin-left: 20px;
+}
+
+.main-nav a {
+    color: #333;
+    font-weight: 500;
+}
+.main-nav a.active, .main-nav a:hover {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+
+/* =========== 主視覺橫幅 Hero Section =========== */
+.hero {
+    background-color: #003366;
+    color: #fff;
+    text-align: center;
+    padding: 80px 0;
+}
+.hero h1 {
+    font-weight: 500;
+}
+.hero .subtitle {
+    font-size: 1.2rem;
+    color: #e9ecef;
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+
+.cta-buttons .btn {
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 0 10px;
+    display: inline-block;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+.cta-buttons .btn:hover { text-decoration: none; }
+
+.btn.btn-primary {
+    background-color: #fff;
+    color: #003366;
+}
+.btn.btn-primary:hover {
+    background-color: transparent;
+    border-color: #fff;
+    color: #fff;
+}
+
+.btn.btn-secondary {
+    background-color: transparent;
+    border-color: #fff;
+    color: #fff;
+}
+.btn.btn-secondary:hover {
+    background-color: #fff;
+    color: #003366;
+}
+
+
+/* =========== 其他區塊 Sections =========== */
+.about-brief, .latest-articles {
+    text-align: center;
+    background-color: #fff;
+}
+.about-brief p {
+    max-width: 600px;
+    margin: 15px auto 25px auto;
+}
+.about-links a {
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.services-overview {
+    text-align: center;
+}
+.service-cards-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+.service-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 30px;
+    width: 30%;
+    min-width: 280px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+.service-card h3 { color: #003366; }
+.service-card .card-link {
+    display: inline-block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+
+/* =========== 頁尾 Footer =========== */
+.main-footer {
+    background: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* =========== 
+   內頁樣式 (About Us, Services, etc.) 
+   請將此段加到 style.css 的最下方
+=========================================== */
+
+/* 頁面頂部標題區塊 */
+.page-header {
+    background: #e9ecef;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.page-header h1 {
+    color: #003366;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+/* 頁面主要內容區塊 */
+.page-content {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-logo {
+    max-width: 300px; /* 控制Logo圖片的最大寬度 */
+    height: auto;
+    margin-bottom: 20px; /* 圖片下方的間距 */
+}
+
+.content-block {
+    margin-bottom: 40px; /* 每個內容區塊之間的間距 */
+}
+
+.content-block h2 {
+    margin-bottom: 15px;
+}
+
+.content-block p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* =========== 
+   聯絡頁面樣式 (Contact Us)
+   這是更新後的版本
+=========================================== */
+
+/* 移除 .contact-container 的 flex 排版，因為不再需要兩欄 */
+.contact-details-full {
+    max-width: 600px; /* 設定內容最大寬度，使其在頁面中央更易讀 */
+    margin: 0 auto; /* 水平置中 */
+}
+
+.info-list {
+    list-style: none;
+    padding: 0;
+}
+
+.info-list li {
+    margin-bottom: 25px; /* 加大項目間距 */
+    font-size: 1.1rem;
+    color: #555;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #eee;
+}
+
+.info-list li strong {
+    color: #003366;
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+/* --- 新增 QR Code 樣式 --- */
+.line-qr-code {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.line-qr-code img {
+    max-width: 150px; /* 控制 QR Code 大小 */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* 確保圖片本身也置中 */
+}
+
+.qr-caption {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 5px;
+}
+/* --- 新增區塊結束 --- */
+
+/* =========== 
+   服務項目頁面樣式 (Service Page)
+   請將此段加到 style.css 的最下方
+=========================================== */
+
+.service-item {
+    display: flex;
+    align-items: center;
+    gap: 50px; /* 圖與文的間距 */
+    padding: 60px 0;
+    border-bottom: 1px solid #e9ecef;
+    flex-wrap: wrap;
+}
+
+.service-item:last-child {
+    border-bottom: none;
+}
+
+/* 圖片在右，文字在左的排版 */
+.service-item.reverse {
+    flex-direction: row-reverse;
+}
+
+.service-image {
+    flex: 1;
+    min-width: 300px;
+    display: flex; /* 使用 Flexbox 來排版 */
+    justify-content: center; /* 水平置中 */
+    align-items: center; /* 垂直置中 */
+}
+
+.service-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+.service-image img {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.service-content h2 {
+    margin-bottom: 10px;
+}
+
+.service-content .tagline {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.service-content ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.service-content li {
+    padding-left: 25px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+/* 替換列表的點點為自訂圖示 (打勾) */
+.service-content li::before {
+    content: '✔';
+    color: #0056b3;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.service-content .slogan {
+    font-weight: bold;
+    color: #003366;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+/* 純文字區塊的樣式 */
+.service-item.text-only .service-content {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+
+/* =========== 
+   政策專欄頁面樣式 (Blog)
+   請將此段加到 style.css 的最下方
+=========================================== */
+
+/* --- 列表頁樣式 --- */
+.article-list-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.article-preview {
+    background: #fff;
+    margin-bottom: 40px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden; /* 確保圓角效果正常 */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.preview-image-link img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.preview-content {
+    padding: 25px;
+}
+
+.article-meta {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.article-title {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.75rem;
+}
+
+.article-title a {
+    color: #003366;
+    text-decoration: none;
+}
+
+.article-title a:hover {
+    color: #0056b3;
+}
+
+.article-excerpt {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.read-more {
+    font-weight: bold;
+    color: #0056b3;
+}
+
+/* --- 單篇文章內頁樣式 --- */
+.full-article-container {
+    background-color: #fff;
+    padding: 20px 0 60px 0;
+}
+
+.article-header-full {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 30px;
+}
+.article-header-full h1 {
+    font-size: 2.5rem;
+}
+
+.featured-image {
+    margin: 0 0 40px 0;
+}
+.featured-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.article-content {
+    max-width: 720px; /* 設定最佳閱讀寬度 */
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.article-content h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.article-content blockquote {
+    border-left: 4px solid #0056b3;
+    margin: 30px 0;
+    padding: 15px 25px;
+    background-color: #f8f9fa;
+    font-style: italic;
+    color: #555;
+}
+
+.article-content ul {
+    list-style: disc;
+    padding-left: 25px;
+}
+
+.back-link {
+    text-align: center;
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+/* 手機版的響應式設計 */
+@media (max-width: 768px) {
+    .main-header .container, .main-nav ul {
+        flex-direction: column; /* 將水平排列改成垂直排列 */
+        align-items: center;
+    }
+    .main-nav li {
+        margin: 10px 0;
+    }
+}
