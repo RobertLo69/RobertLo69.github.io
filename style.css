@@ -500,3 +500,28 @@ section {
         margin: 10px 0;
     }
 }
+/* =========== 
+   限時優惠區塊樣式 (Offer Box)
+   請將此段加到 style.css 的最下方
+=========================================== */
+.offer-box {
+    background-color: #fffaf0; /* 淺黃色背景 */
+    border: 2px solid #fdc040; /* 顯眼的黃色邊框 */
+    border-radius: 8px;
+    padding: 20px 25px;
+    margin-top: 30px; /* 與上方段落的間距 */
+    margin-bottom: 30px; /* 與下方按鈕的間距 */
+}
+.offer-box h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #d9534f; /* 醒目的紅色系標題 */
+    text-align: center;
+    font-size: 1.3rem;
+}
+.offer-box p {
+    font-size: 0.95rem;
+    color: #333;
+    line-height: 1.7;
+    margin: 0;
+}
